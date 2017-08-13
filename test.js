@@ -1,7 +1,7 @@
 var request = require('request');
 var should = require('chai').should();
 
-//Basic API Endpint call and HTTP status code validation
+//Basic API Endpoint call and HTTP status code validation
 describe('Sample tests to Blizzard Entertainment\'s public API', function() {
     it('GET request to endpoint, check HTTP status code is 200', function (done) {
         request.get({url: 'https://us.api.battle.net/wow/character/dalaran/eeyr?fields=stats&locale=en_US&apikey=' + process.env.APIKEY},
